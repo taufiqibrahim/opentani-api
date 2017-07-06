@@ -1,0 +1,600 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"nodemo",
+				"node_modules"
+			],
+			[
+				"no",
+				"nodemon"
+			],
+			[
+				"Wall",
+				"WallStack"
+			],
+			[
+				"Wal",
+				"WallScreen"
+			],
+			[
+				"las",
+				"lastScreen"
+			],
+			[
+				"map",
+				"mapStateToProps"
+			],
+			[
+				"nav",
+				"navigateActions"
+			],
+			[
+				"na",
+				"navigation"
+			],
+			[
+				"hide",
+				"hideSkipButton"
+			],
+			[
+				"cur",
+				"currentIndex"
+			],
+			[
+				"last",
+				"lastScreenX"
+			],
+			[
+				"ne",
+				"nextX"
+			],
+			[
+				"nati",
+				"nativeEvent"
+			],
+			[
+				"upda",
+				"updatePosition"
+			],
+			[
+				"content",
+				"contentOffset"
+			],
+			[
+				"x",
+				"currentX"
+			],
+			[
+				"sk",
+				"hideSkipButton"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"to",
+				"toogleSkipButton"
+			],
+			[
+				"is",
+				"isSkipVisible"
+			],
+			[
+				"butt",
+				"buttonWrapper"
+			],
+			[
+				"al",
+				"alignItems"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"flex",
+				"flexDirection"
+			],
+			[
+				"wi",
+				"widthByThree"
+			],
+			[
+				"col",
+				"COLOR_GREEN"
+			],
+			[
+				"rend",
+				"renderButton"
+			],
+			[
+				"on",
+				"OnboardingStack"
+			],
+			[
+				"font",
+				"fontSize"
+			],
+			[
+				"p",
+				"phone"
+			],
+			[
+				"pr",
+				"props"
+			],
+			[
+				"Sc",
+				"ScrollView"
+			],
+			[
+				"F",
+				"FadeInView"
+			],
+			[
+				"COLO",
+				"COLOR_GREEN"
+			],
+			[
+				"spr",
+				"springAnim"
+			],
+			[
+				"fa",
+				"fadeAnim"
+			],
+			[
+				"spi",
+				"spinValue"
+			],
+			[
+				"style",
+				"styles"
+			],
+			[
+				"sp",
+				"spinValue"
+			],
+			[
+				"con",
+				"containers"
+			],
+			[
+				"spring",
+				"springValue"
+			],
+			[
+				"bu",
+				"buttonShow"
+			],
+			[
+				"buttonS",
+				"buttonShow"
+			],
+			[
+				"Home",
+				"HomeScreen"
+			],
+			[
+				"Sin",
+				"SignupPhone"
+			],
+			[
+				"navi",
+				"navigate"
+			],
+			[
+				"Ap",
+				"AppWithNavigationState"
+			],
+			[
+				"APp",
+				"AppWithNavigationState"
+			],
+			[
+				"app",
+				"AppWithNavigationState"
+			],
+			[
+				"Sig",
+				"SignupPhone"
+			],
+			[
+				"Sign",
+				"SignupStack"
+			],
+			[
+				"ru",
+				"routeName"
+			],
+			[
+				"Si",
+				"SignupPhone"
+			],
+			[
+				"rou",
+				"routeName"
+			],
+			[
+				"a",
+				"AppNavigator"
+			],
+			[
+				"Signup",
+				"SignupName"
+			],
+			[
+				"get",
+				"getStateForAction"
+			],
+			[
+				"ini",
+				"initialNavState"
+			],
+			[
+				"S",
+				"SignupPhone"
+			],
+			[
+				"Na",
+				"NavigationActions"
+			],
+			[
+				"App",
+				"AppNavigator"
+			],
+			[
+				"init",
+				"initialNavState"
+			],
+			[
+				"Ob",
+				"OnboardingStack"
+			],
+			[
+				"si",
+				"SignupNameScreen"
+			],
+			[
+				"b",
+				"buttonStyles"
+			],
+			[
+				"SI",
+				"SIGNUP_FAILURE"
+			],
+			[
+				"SIN",
+				"SIGNUP_FORM_FILL"
+			],
+			[
+				"styl",
+				"styles"
+			],
+			[
+				"ali",
+				"alignSelf"
+			],
+			[
+				"sign",
+				"SignupStack"
+			],
+			[
+				"Main",
+				"MainScreen"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 615,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 202,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 138.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/workaholic/projects/opentani-api"
+	],
+	"file_history":
+	[
+		"/home/workaholic/projects/opentani-api/.babelrc",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Wall/screens/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Onboarding/End.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Signup/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Home/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/navigations/reducers/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Signup/reducers/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Signup/actions/actionTypes.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Signup/actions/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/components/Swiper/Swiper.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/styles/TextStyles.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/components/Swiper/Styles.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Onboarding/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/components/Form/Typeform.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Onboarding/Stories_1.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/components/Button/Button.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/App.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/styles/ColorPalette.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Signup/screens/SignupName.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Signup/screens/SignupPhone.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Signup/screens/SignupId.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/navigations/AppNavigator.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/components/AnimatedView/FadeInView.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Test/TestFade.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Test/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/components/Button/SpringButton.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/AppWithNavigationState.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/reduxManager/reducers.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/stateManager/reducers/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/userstate/reducers/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/reduxManager/store.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/userstate/actions/actionTypes.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/redux/store.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/redux/reducers.js",
+		"/home/workaholic/projects/opentani_react_navigation/index.android.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/reducers/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/store.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/AppWithNavigationRedux.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/AppWithNavigator.js",
+		"/home/workaholic/projects/opentani_react_navigation/package.json",
+		"/home/workaholic/projects/opentani_react_navigation/app/reducers/navReducer.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/navigations/routes/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/AppNavigator.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/config/navOptions.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/navigations/routes/navRoutes.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/config/navRoutes.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Main/index.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/stores/store.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/components/Onboarding/Final.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Master/Master.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Signup/screens/Signup1Name.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/containers/Signup/Signup1Name.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/styles/ButtonStyles.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/components/Onboarding/Onboarding1.js",
+		"/home/workaholic/projects/opentani_react_navigation/app/Test.js"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Home",
+			"console",
+			"swipe",
+			"skipButtonVisible",
+			"isSkipVisible",
+			"Onboarding1",
+			"SignupNameScreen",
+			"'#2BA84A'",
+			"COLOR_OPENTANI_GREEN",
+			"visible"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"hideSkipButton",
+			"isSkipHidden",
+			"Stories_1",
+			"SignupPhoneScreen",
+			"COLOR_GREEN"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								559,
+								559
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "opentani-api.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
