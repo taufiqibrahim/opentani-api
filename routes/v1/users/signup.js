@@ -4,36 +4,39 @@ import { createToken } from '../../../utils/token';
 import { generateOtp } from '../../../utils/otp';
 
 const SignUp = (req, res, next) => {
+
   models.User.create({
-    userName: req.body.user_name,
+    userName: req.body.userName,
     password: req.body.password,
     email: req.body.email,
     phone: req.body.phone,
-    fullName: req.body.full_name
+    fullName: req.body.fullName
   })
   .then((user) => {
     let to = null;
 
-    if (req.query.otp_method == 'email') {
+    if (req.headers["opentani-otp-transport"] == 'email') {
       to = user.email;
     } 
-    else if (req.query.otp_method == 'sms') {
+    else if (req.headers["opentani-otp-transport"] == 'sms') {
       to = user.phone;
     }
     
     let token = generateOtp(
       to,
-      req.query.otp_method
+      req.headers["opentani-otp-transport"]
     );
     res.status(200).json({
+      code: 200,
       status: "OK",
-      details: "User successfully created",
+      message: "User successfully created",
     })
   })
   .catch(Sequelize.ValidationError, (err) => {
     res.status(400).json({
+      code: 400,
       status: "Bad Request",
-      details: "",
+      message: "",
       error: err.errors
     })
   })

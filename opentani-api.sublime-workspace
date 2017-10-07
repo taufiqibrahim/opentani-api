@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"otp",
+				"otp_method"
+			],
+			[
+				"sen",
+				"sendOtpByEmail"
+			],
+			[
+				"mail",
+				"mailOptions"
+			],
+			[
+				"ver",
+				"verifyOtp"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"AP",
+				"API_SECRET"
+			],
+			[
+				"veri",
+				"verify"
+			],
+			[
+				"ex",
+				"exists"
+			],
+			[
+				"val",
+				"validate"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"log",
+				"logout"
+			],
+			[
+				"pw",
+				"pwCompare"
+			],
+			[
+				"de",
+				"details"
+			],
+			[
+				"cre",
+				"createToken"
+			],
+			[
+				"bc",
+				"bcrypt"
+			],
+			[
+				"st",
+				"STRING"
+			],
+			[
+				"lahan",
+				"lahanRouter"
+			],
+			[
+				"user",
+				"userRouter"
+			],
+			[
 				"nodemo",
 				"node_modules"
 			],
@@ -90,10 +162,6 @@
 			[
 				"al",
 				"alignItems"
-			],
-			[
-				"st",
-				"style"
 			],
 			[
 				"flex",
@@ -292,18 +360,37 @@
 	"buffers":
 	[
 		{
-			"file": "package.json",
+			"file": ".env",
 			"settings":
 			{
-				"buffer_size": 615,
+				"buffer_size": 307,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server.js",
+			"file": "utils/otp.js",
 			"settings":
 			{
-				"buffer_size": 202,
+				"buffer_size": 1754,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/v1/users/signup.js",
+			"settings":
+			{
+				"buffer_size": 947,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "utils/smsNexmo.js",
+			"settings":
+			{
+				"buffer_size": 815,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -345,10 +432,44 @@
 	},
 	"expanded_folders":
 	[
-		"/home/workaholic/projects/opentani-api"
+		"/home/workaholic/projects/opentani-api",
+		"/home/workaholic/projects/opentani-api/routes",
+		"/home/workaholic/projects/opentani-api/routes/v1",
+		"/home/workaholic/projects/opentani-api/routes/v1/users",
+		"/home/workaholic/projects/opentani-api/seeders",
+		"/home/workaholic/projects/opentani-api/utils"
 	],
 	"file_history":
 	[
+		"/home/workaholic/projects/opentani-api/server.js",
+		"/home/workaholic/projects/opentani-api/utils/token.js",
+		"/home/workaholic/projects/opentani-api/routes/index.js",
+		"/home/workaholic/projects/opentani-api/recipes/index.js",
+		"/home/workaholic/projects/opentani-api/utils/otp.js",
+		"/home/workaholic/projects/opentani-api/models/user.js",
+		"/home/workaholic/projects/opentani-api/config/config.json",
+		"/home/workaholic/projects/opentani-api/models/index.js",
+		"/home/workaholic/projects/opentani-api/utils/mailer.js",
+		"/home/workaholic/projects/opentani-api/config/secret.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/users/login.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/users/index.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/users/exists.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/users/signup.js",
+		"/home/workaholic/projects/opentani-api/migrations/20170621123000-create-user.js",
+		"/home/workaholic/projects/opentani-api/utils/smsNexmo.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/users/verify.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/users/test.js",
+		"/home/workaholic/projects/opentani-api/utils/otpServices.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/users/logout.js",
+		"/home/workaholic/projects/opentani-api/utils/pw.js",
+		"/home/workaholic/projects/opentani-api/package.json",
+		"/home/workaholic/projects/opentani-api/migrations/20170605005314-create-user.js",
+		"/home/workaholic/projects/opentani-api/noPublic.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/index.js",
+		"/home/workaholic/projects/opentani-api/utils/tokenizer.js",
+		"/home/workaholic/projects/opentani-api/migrations/20170528150656-create-user.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/lahan/index.js",
+		"/home/workaholic/projects/opentani-api/routes/v1/lahan/test.js",
 		"/home/workaholic/projects/opentani-api/.babelrc",
 		"/home/workaholic/projects/opentani_react_navigation/app/containers/Wall/screens/index.js",
 		"/home/workaholic/projects/opentani_react_navigation/app/containers/Onboarding/End.js",
@@ -453,29 +574,59 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "package.json",
+					"file": ".env",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 615,
+						"buffer_size": 307,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								559,
-								559
+								184,
+								184
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "utils/otp.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								774,
+								774
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -485,20 +636,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "server.js",
+					"buffer": 2,
+					"file": "routes/v1/users/signup.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 202,
+						"buffer_size": 947,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								202,
-								202
+								587,
+								587
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "utils/smsNexmo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								189
 							]
 						],
 						"settings":

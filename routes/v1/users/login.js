@@ -2,36 +2,46 @@ import Sequelize from 'sequelize';
 import models from '../../../models';
 import { pwCompare } from '../../../utils/pw';
 import { createToken } from '../../../utils/token';
+import { generateOtp } from '../../../utils/otp';
 
 const Login = (req, res, next) => {
-  if (req.body.user_name && req.body.password) {
+  if (req.body.userName) {
     models.User.findOne({
-      where: { userName: req.body.user_name }
+      where: { userName: req.body.userName }
     })
     .then( (user) => {
       if (!user) {
         res.status(404).json({
-          details: "User not found"
+          code: 404,
+          message: "User not found"
         })
-      } else if (user) {
-        let vrf = pwCompare( req.body.password, user.pwHash );
+      } 
+      else if (user) {
+        let to = null;
 
-        if (!vrf) {
-          res.status(401).json({
-            details: "Wrong password"
-          })
-        } else {
-          let token = createToken(user);
-          res.status(200).json({
-            details: "Authentication successful",
-            token: token
-          })
+        if (req.headers["opentani-otp-transport"] == 'email') {
+          to = user.email;
+        } 
+        else if (req.headers["opentani-otp-transport"] == 'sms') {
+          to = user.phone;
         }
+        
+        let token = generateOtp(
+          to,
+          req.headers["opentani-otp-transport"]
+        );
+        res.status(200).json({
+          code: 200,
+          status: "OK",
+          message: "OTP sent",
+          otpTransport: req.headers["opentani-otp-transport"],
+        });
       }
     })
   } else {
     res.status(400).json({
-      details: "Username and Password must not be empty"
+      code: 400,
+      message: "Username and Password must not be empty"
     })
   }
 }

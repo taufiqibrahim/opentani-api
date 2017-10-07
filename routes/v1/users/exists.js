@@ -11,15 +11,17 @@ const Exists = (req, res, next) => {
     .then( (user) => {
       if (user) {
         res.status(200).json({
+          code: 200,
           status: 'OK',
-          details: 'Email address already in use',
+          message: 'Email address already in use',
           method: 'email',
           exists: true,
         })
       } else {
         res.status(200).json({
+          code: 200,
           status: 'OK',
-          details: null,
+          message: null,
           method: 'email',
           exists: false
         })
@@ -34,15 +36,17 @@ const Exists = (req, res, next) => {
     .then( (user) => {
       if (user) {
         res.status(200).json({
+          code: 200,
           status: 'OK',
-          details: 'Phone number already in use',
+          message: 'Phone number already in use',
           method: 'phone',
           exists: true
         })
       } else {
         res.status(200).json({
+          code: 200,
           status: 'OK',
-          details: null,
+          message: null,
           method: 'phone',
           exists: false
         })
@@ -50,8 +54,9 @@ const Exists = (req, res, next) => {
     })
   } else {
     res.status(400).json({
+      code: 400,
       status: "Bad Request",
-      details: "Unknown method. Must be either 'email' or 'phone'",
+      message: "Unknown method. Must be either 'email' or 'phone'",
       method: null,
       exists: null,
     })

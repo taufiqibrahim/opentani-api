@@ -7,7 +7,7 @@ import {sendSmsNexmo} from './smsNexmo';
 
 const BASE_URL = process.env.NEXMO_BASE_URL;
 
-const generateOtp = (to, otpMethod) => {
+const generateOtp = (to, otpTransport) => {
   const otp = speakeasy.totp({
     secret: process.env.GLOBAL_SECRET,
     encoding: 'ascii',
@@ -16,14 +16,16 @@ const generateOtp = (to, otpMethod) => {
     window: process.env.OTP_NUM_WINDOW
   });
 
-  const subject = 'OTP Aktivasi Opentani';
-  const message = 'OTP Aktivasi Opentani Anda adalah: ' + otp;
+  const subject = 'Kode Aktivasi Opentani';
+  const message = 'Kode Aktivasi Opentani Anda adalah: ' + otp + '. Kode ini berlaku selama 24 jam.';
+  const emailData = {
+    subject: subject,
+    otp: otp,
+  }
 
-  if (otpMethod == 'email') {
-    console.log('sending email disabled');
-    //sendOtpByEmail(to, subject, message);
-  } else if (otpMethod == 'sms') {
-    console.log('sending SMS');
+  if (otpTransport == 'email') {
+    sendOtpByEmail(to, subject, emailData);
+  } else if (otpTransport == 'sms') {
     sendSmsNexmo(to, message);
   }
   return otp;
@@ -31,13 +33,29 @@ const generateOtp = (to, otpMethod) => {
 
 const verifyOtp = (req, res, next) => {
 
-  let token = req.body.token;
+  let token = req.headers['opentani-otp-token'];
+  let userName = req.body.userName;
   let verified = false;
 
-  if (!token) {
+  if ( !token && !userName ) {
     res.status(400).json({
+      code: 400,
       status: "Unauthorized",
-      details: "No OTP provided"
+      message: "No OTP & UserName provided"
+    })
+  }
+  else if ( !userName ) {
+    res.status(400).json({
+      code: 400,
+      status: "Unauthorized",
+      message: "No UserName provided"
+    })
+  }
+  else if ( !token ) {
+    res.status(400).json({
+      code: 400,
+      status: "Unauthorized",
+      message: "No OTP provided"
     })
   }
   else {
@@ -52,19 +70,18 @@ const verifyOtp = (req, res, next) => {
       })
     } catch(err) {
       res.status(401).json({
+        code: 401,
         status: "Unauthorized",
-        details: "Invalid or expired OTP"
+        message: "Invalid or expired OTP"
       })
     }
     if (verified) {
-      res.status(200).json({
-        status: "Authorized",
-        details: "OTP is valid"
-      })
+      next();
     } else {
       res.status(401).json({
+        code: 401,
         status: "Unauthorized",
-        details: "Invalid or expired OTP"
+        message: "Invalid or expired OTP"
       })
     }
   }

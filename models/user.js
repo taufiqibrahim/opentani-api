@@ -30,9 +30,14 @@ module.exports = function(sequelize, DataTypes) {
     nickName: DataTypes.STRING,
     password: DataTypes.VIRTUAL,
     pwHash: DataTypes.STRING
-  }, {
+  }, 
+      /*
+       * Password hashing is disabled. Passwordless.
+       *
+  {
     hooks: {
-      beforeCreate: (user, options, cb) => {
+
+        beforeCreate: (user, options, cb) => {
         var hash = bcrypt.hashSync(user.password, 8);
         user.pwHash = hash;
         var normalizedEmail = user.email.toLowerCase();
@@ -40,7 +45,7 @@ module.exports = function(sequelize, DataTypes) {
         cb(null, user);
       }
     }
-  }, {
+  },*/ {
     classMethods: {
       associate: function(models) {
         // associations can be defined here

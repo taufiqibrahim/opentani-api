@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const nodemailer = require('nodemailer');
+import { mailFormatterSignUp } from './gen_mjml';
 
   const transport = nodemailer.createTransport({
     service: 'Gmail',
@@ -10,14 +11,20 @@ const nodemailer = require('nodemailer');
     },
   })
 
-const sendOtpByEmail = (to, subject, message) => {
+const sendOtpByEmail = (to, subject, emailData) => {
+
+  const emailHtml = mailFormatterSignUp(emailData);
+  // console.log(emailHtml);
 
   const mailOptions = {
     from: process.env.MAILER_USERNAME,
     to: to,
-    subject: subject,
-    html: message
+    subject: emailData.subject,
+    html: emailHtml,
   }
+
+  //console.log(message);
+  //console.log(`Message sent:`);
 
   transport.sendMail(mailOptions, (error, info) => {
     if (error) {

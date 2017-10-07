@@ -27,7 +27,7 @@ const verifyToken = (accessToken) => {
 }
 
 const verifyTokenMiddleware = (req, res, next) => {
-  let accessToken = req.body.token || req.params.token || req.headers['x-access-token'] || req.headers.token;
+  let accessToken = req.body.token || req.params.token || req.headers['opentani-access-token'] || req.headers.token;
   let isTokenValid = false;
 
   if (!accessToken) {
