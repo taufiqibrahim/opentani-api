@@ -1,5 +1,5 @@
-const SignUpTemplate = (emailData) => 
-`
+const SignUpTemplate = emailData =>
+  `
 <mjml>
 
   <mj-head>
@@ -115,8 +115,6 @@ const SignUpTemplate = (emailData) =>
     </mj-container>
   </mj-body>
 </mjml>
-`
+`;
 
-export {
-  SignUpTemplate
-}
+export { SignUpTemplate };

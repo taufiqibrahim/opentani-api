@@ -3,16 +3,15 @@ require('dotenv').config();
 const nodemailer = require('nodemailer');
 import { mailFormatterSignUp } from './gen_mjml';
 
-  const transport = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
-      user: process.env.MAILER_USERNAME,
-      pass: process.env.MAILER_PASSWORD,
-    },
-  })
+const transport = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    user: process.env.MAILER_USERNAME,
+    pass: process.env.MAILER_PASSWORD
+  }
+});
 
 const sendOtpByEmail = (to, subject, emailData) => {
-
   const emailHtml = mailFormatterSignUp(emailData);
   // console.log(emailHtml);
 
@@ -20,8 +19,8 @@ const sendOtpByEmail = (to, subject, emailData) => {
     from: process.env.MAILER_USERNAME,
     to: to,
     subject: emailData.subject,
-    html: emailHtml,
-  }
+    html: emailHtml
+  };
 
   //console.log(message);
   //console.log(`Message sent:`);
@@ -31,10 +30,7 @@ const sendOtpByEmail = (to, subject, emailData) => {
       console.log(error);
     }
     console.log(`Message sent: ${info.response}`);
-  })
+  });
+};
 
-}
-
-export {
-  sendOtpByEmail,
-}
+export { sendOtpByEmail };
